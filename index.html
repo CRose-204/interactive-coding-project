@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>interactive-coding-project</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+         <nav class="navigation">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html" class="tournament-series-logo"><img src="images/hover-girl.png" alt="tournament-series-logo"></a>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-list">
+                        <li><p>About</p></li>
+                        <li><p> Event Schedule</p></li>
+                        <li><p>Scoreboard</p></li>
+                        <li><img src="images/cart.svg" alt="shopping-cart"></li>
+                        <li><img src="images/profile.svg" alt="profile"></li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+    <!-- Hero --> 
+     <div class="hero-left"></div>
+     <div class="hero-right">
+        <img src="images/hover-girl.png" alt="hover-girl">
+     </div>
+    <!-- Modal --> 
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Take Advantage of the Arena Special!</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-left">
+        <div class="modal-body">
+          <p>Buy 1 ticket and get 50% off the second when you sign up for our World building newsletter!</p>
+            <form action="mailto:" method="post">
+             <input type="text" id="email" name="email" required="required" placeholder="Email Address"/>
+            </form>
+            <br/>
+            <button data-close-button class="close-button">Get Tickets Now</button>
+        </div>
+      </div>
+      <div class="modal-right">
+        <img src="" alt="hover-girl-2">
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+  </html>
