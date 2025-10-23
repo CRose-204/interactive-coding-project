@@ -1,9 +1,72 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+/*Reference
+.<div> {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.<div-2> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.<div-3> {
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+body {
+  color: #000000;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+html {
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+/* Hero */
+.hover-girl {
+  animation-name:spaceHover;
+  animation-direction: alternate;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  height: 500px;
+  position: relative;
+  width:437.5px;
+}
+.hover-girl-2 {
+  height: 440px;
+  width:627px;
+}
+@keyframes spaceHover {
+  from {top:0px}
+  to {top: 50px;}
+}
+.profile{
+  height: 30px;
+  width:30px;
+}
+.shopping-cart{
+  height: 25px;
+  width:26.83px;
+}
+
 /* Modal */
 .modal {
   background-color: #ffffff;
