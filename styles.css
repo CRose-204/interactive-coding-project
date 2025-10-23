@@ -41,6 +41,47 @@ html {
   width: 1440px;
 }
 /* Hero */
+.C {
+  height: 64px;
+  width:103.04px;
+}
+.Y {
+  height: 64px;
+  width:92.3px;
+}
+.B {
+  height: 64px;
+  width:89.6px;
+}
+.E {
+  height: 50.4px;
+  width:88.8px;
+}
+.R {
+  height: 50.4px;
+  width:80.8px;
+}
+.S {
+  height: 50.4px;
+  width:78.8px;
+}
+.H {
+  height: 64px;
+  width:79.6px;
+}
+.laser {
+  height: 34.8px;
+  width:34.8px;
+}
+.T {
+  height: 64px;
+  width:73.6px;
+}
+
+.hero-image {
+ height: 405.16px;
+ width:720.29px;
+}
 .hover-girl {
   animation-name:spaceHover;
   animation-direction: alternate;
