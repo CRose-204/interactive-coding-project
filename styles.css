@@ -80,7 +80,8 @@ html {
 }
 .game-title {
   align-items: center;
- display: flex;
+  display: flex;
+  margin: 4.984rem 0rem 1.25rem 9.9rem;
 }
 .game-title-text {
   height:122.6px;
@@ -92,14 +93,16 @@ html {
   height: 76.2rem;
 }
 .hero-image {
- height: 405.16px;
- width:720.29px;
+  height: 405.16px;
+  margin-right: 0rem 0rem 0rem 0rem;
+  width:720.29px;
 }
 .hero-left p {
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 4.8rem;
+  margin: 1.25rem 0rem 0rem 10.3rem;
 }
 .hero-right{
   padding-top: 12.5rem;
@@ -117,8 +120,8 @@ html {
 .hover-girl-2 {
   height: 440px;
   width:627px;
+  z-index: index -1;
 }
-
 @keyframes spaceHover {
   from {top:0px}
   to {top: 50px;}
@@ -173,14 +176,13 @@ nav{
   font-weight: 900;
   font-style: normal;
   line-height: 2.4rem;
-  margin: 2.5rem 0rem 0rem 2.5rem;
+  margin: 2.5rem 0rem 0rem 10.3rem;
   padding: 2rem 2rem 2rem 2rem;
 }
 .tournament-series-logo {
   height:3.6rem;
   width: 49.2rem;
 }
-
 /* Modal */
 input[type="text"] {
   background-color: rgba(255, 255, 255, .5);
@@ -192,7 +194,7 @@ input[type="text"] {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.1rem;
-  margin: 5rem 0rem 0rem 10.3rem;
+  margin: 5rem 0rem 1.25rem 10.3rem;
   padding: 1.45rem 0rem 1.45rem 2.5rem;
   width: 50rem;
 }
@@ -202,31 +204,28 @@ textarea::placeholder {
 }
 .modal {
   background: linear-gradient(90deg,rgba(4, 0, 26, 1) 0%, rgba(0, 225, 255, 1) 100%);
-  border: 1px solid #000000;
-  border-radius: 10px;
-  display: flex;
   justify-content: center;
   left: 50%;
-  max-width: 80%;
+  max-width: 100%;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  width: 500px;
+  width: 144rem;
   z-index: 10;
 }
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
-.modal-body {
-  padding: 10px 15px;
+.modal-container {
+  display:flex;
 }
 .modal-header {
   align-items: center;
   border-bottom: 1px solid #000000;
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  margin: 5rem 13.2rem 12.5rem 10.3rem;
 }
 .modal-header .close-button {
   background: none;
@@ -236,9 +235,12 @@ textarea::placeholder {
   font-weight: bold;
   outline: none;
 }
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height:6rem;
 }
 #overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -254,4 +256,18 @@ textarea::placeholder {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+.ticket-button-2 {
+   background: #2600FF;
+  background-clip: padding-box, border-box;
+  border-radius: 1rem;
+  border-style: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 2.4rem;
+  margin: 1.25rem 0rem 0rem 10.3rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
