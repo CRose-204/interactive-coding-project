@@ -27,7 +27,7 @@
 }
 */
 body {
-  color: #000000;
+  color: #ffffff;
   font-family: "Teko", sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -35,6 +35,7 @@ body {
   line-height: 2.4rem;
 }
 html {
+  background-color: #000000;
   font-size: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -77,10 +78,32 @@ html {
   height: 64px;
   width:73.6px;
 }
-
+.game-title {
+  align-items: center;
+ display: flex;
+}
+.game-title-text {
+  height:122.6px;
+  width:739.85px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  height: 76.2rem;
+}
 .hero-image {
  height: 405.16px;
  width:720.29px;
+}
+.hero-left p {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.8rem;
+}
+.hero-right{
+  padding-top: 12.5rem;
+  padding-right: 5.65rem;
 }
 .hover-girl {
   animation-name:spaceHover;
@@ -95,9 +118,41 @@ html {
   height: 440px;
   width:627px;
 }
+
 @keyframes spaceHover {
   from {top:0px}
   to {top: 50px;}
+}
+nav{
+  align-items: center;
+  background: linear-gradient(90deg, rgba(4, 0, 26, 1) 0%, rgba(0, 225, 255, 1) 100%);
+  display: flex;
+  height: 7.5rem;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-left: 10.3rem;
+  padding-right: 10.359rem;
+  width: 144rem;;
+}
+.nav-container{
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-left: 10.3rem;
+  margin-right: 10.359rem;
+  margin-top: 2rem;
+}
+.nav-list {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  width: 44.883rem;
+}
+.nav-list li{
+  color: #ffffff;
 }
 .profile{
   height: 30px;
@@ -107,12 +162,50 @@ html {
   height: 25px;
   width:26.83px;
 }
+.ticket-button {
+   background: #2600FF;
+  background-clip: padding-box, border-box;
+  border-radius: 1rem;
+  border-style: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 2.4rem;
+  margin: 2.5rem 0rem 0rem 2.5rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.tournament-series-logo {
+  height:3.6rem;
+  width: 49.2rem;
+}
 
 /* Modal */
+input[type="text"] {
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin: 5rem 0rem 0rem 10.3rem;
+  padding: 1.45rem 0rem 1.45rem 2.5rem;
+  width: 50rem;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+}
 .modal {
-  background-color: #ffffff;
+  background: linear-gradient(90deg,rgba(4, 0, 26, 1) 0%, rgba(0, 225, 255, 1) 100%);
   border: 1px solid #000000;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
   left: 50%;
   max-width: 80%;
   position: fixed;
