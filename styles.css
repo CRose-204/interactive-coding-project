@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
@@ -42,41 +43,9 @@ html {
   width: 1440px;
 }
 /* Hero */
-.C {
-  height: 64px;
-  width:103.04px;
-}
-.Y {
-  height: 64px;
-  width:92.3px;
-}
-.B {
-  height: 64px;
-  width:89.6px;
-}
-.E {
-  height: 50.4px;
-  width:88.8px;
-}
-.R {
-  height: 50.4px;
-  width:80.8px;
-}
-.S {
-  height: 50.4px;
-  width:78.8px;
-}
-.H {
-  height: 64px;
-  width:79.6px;
-}
 .laser {
   height: 34.8px;
   width:34.8px;
-}
-.T {
-  height: 64px;
-  width:73.6px;
 }
 .game-title {
   align-items: center;
@@ -91,11 +60,13 @@ html {
   display: flex;
   justify-content: space-between;
   height: 76.2rem;
+  margin: 0rem 0rem 18.1rem 0rem;
 }
 .hero-image {
   height: 405.16px;
   margin-right: 0rem 0rem 0rem 0rem;
   width:720.29px;
+  z-index: -1;
 }
 .hero-left p {
   font-size: 4rem;
@@ -116,10 +87,6 @@ html {
   height: 500px;
   position: relative;
   width:437.5px;
-}
-.hover-girl-2 {
-  height: 440px;
-  width:627px;
 }
 @keyframes spaceHover {
   from {top:0px}
@@ -178,11 +145,29 @@ nav{
   margin: 2.5rem 0rem 0rem 10.3rem;
   padding: 2rem 2rem 2rem 2rem;
 }
+.ticket-button:hover {
+  background: #00B1C8;
+}
 .tournament-series-logo {
   height:3.6rem;
   width: 49.2rem;
 }
 /* Modal */
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  outline: none;
+  z-index: 12;
+}
+.hover-girl-2 {
+  align-items: end;
+  height: 450px;
+  width:627px;
+  z-index: 11;
+}
 input[type="text"] {
   background-color: rgba(255, 255, 255, .5);
   border: 1px solid #ffffff;
@@ -193,9 +178,10 @@ input[type="text"] {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.1rem;
-  margin: 5rem 0rem 1.25rem 0rem;
+  margin: 2.5rem 0rem 1.25rem 0rem;
   padding: 1.45rem 0rem 1.45rem 2.5rem;
   width: 50rem;
+  z-index: 12;
 }
 input[type="text"]::placeholder,
 textarea::placeholder {
@@ -217,29 +203,38 @@ textarea::placeholder {
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
+.modal-body p {
+    color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3.6rem;
+  margin: 1.25rem 0rem 2.5rem 0rem;
+  z-index: 12;
+}
 .modal-container {
   display:flex;
   height:45rem;
   justify-content: space-between;
   margin: 5rem 9.1rem 0rem 10.3rem;
   width: 124.6rem;
+  z-index: 12;
 }
-.modal-header {
-}
-.modal-header .close-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: bold;
-  outline: none;
+.modal-left {
+  width:60.5rem;
+  z-index: 12;
 }
 .title {
   font-family: "Orbitron", sans-serif;
   font-size: 5rem;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height:6rem;
+  letter-spacing: -1.5%;
+  margin: 0rem 0rem 0rem 0rem;
+  text-shadow: .2rem .2rem 0rem #909090;
+  z-index: 12;
 }
 #overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -267,6 +262,9 @@ textarea::placeholder {
   font-weight: 900;
   font-style: normal;
   line-height: 2.4rem;
-  margin: 1.25rem 0rem 0rem 10.3rem;
+  margin: 1.25rem 0rem 0rem 0rem;
   padding: 2rem 2rem 2rem 2rem;
+  z-index: 12;
+}.ticket-button-2:hover {
+  background: #00B1C8;
 }
