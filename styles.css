@@ -225,6 +225,10 @@ textarea::placeholder {
   width:60.5rem;
   z-index: 12;
 }
+.modal-right {
+  width:62.7rem;
+  z-index: 12;
+}
 .title {
   font-family: "Orbitron", sans-serif;
   font-size: 5rem;
