@@ -24,21 +24,23 @@
        </ul>
       </div>
     </nav>
-    <section class="hero">
+    <!-- Hero -->
     <div class="hero-container">
      <div class="hero-left">
         <img src="images/hero-image.png" alt="hero-image" class="hero-image">
-        <img src="images/game-title-default.svg" alt="game-title-default" class="game-title-default">
-        <img src="images/game-title-active.svg" alt="game-title-active" class="game-title-active">
+        <ul class="game-title">
+          <li><img src="images/laser-default.svg" alt="laser-default" class="laser-default"></li>
+          <li><img src="images/laser-active.svg" alt="laser-active" class="laser-active"></li>
+          <li><img src="images/game-title-text.svg" alt="game-title-text" class="game-title-text"></li>
+        </ul>
         <p>October 20 - November 14, 2025</p>
-        <button type="button" data-modal-target="#modal" class="ticket-button">Get Tickets Now</button>
+        <button data-modal-target="#modal" class="ticket-button">Get Tickets Now</button>
      </div>
      <div class="hero-right">
         <img src="images/hover-girl.png" alt="hover-girl" class="hover-girl"> 
      </div>
     </div>
-    </section>
-    <section class="modal">
+    <!-- Modal -->
     <div class="modal" id="modal">
       <!-- <button data-close-button class="close-button">&times;</button> -->
       <div class="modal-container">
@@ -50,7 +52,7 @@
             <input type="text" id="email" name="email" required="required" placeholder="Email Address"/>
             </form>
             <br/>
-            <button type="button" data-close-button class="ticket-button-2">Get Tickets Now</button>
+            <button data-close-button class="ticket-button-2">Get Tickets Now</button>
           </div>
         </div>
         <div class="modal-right">
@@ -59,6 +61,5 @@
       </div>
     </div>
     <div id="overlay"></div>
-    </section>
   </body>
   </html>
