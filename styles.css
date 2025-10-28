@@ -43,8 +43,23 @@ html {
   width: 1440px;
 }
 /* Hero */
-.game-title ul{
-  margin: 0rem 0rem 0rem 10.3rem;
+.cybershot{
+    align-items: center;
+    display: flex;
+    margin: 0rem 0rem 1.25rem 10.3rem;
+}
+.cybershot li {
+  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 25%, rgba(168, 175, 177, 1) 38%, rgba(51, 58, 64, 1) 50%, rgba(168, 175, 177, 1) 63%, rgba(255, 255, 255, 1) 75%);
+  font-family: "Stalinist One", sans-serif;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9rem;
+  -webkit-text-stroke: .4rem;
+  -webkit-text-stroke-color: #333A40;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: -1;
 }
 .hero-container {
   display: flex;
@@ -56,6 +71,16 @@ html {
   height: 405.16px;
   margin-right: 0rem 0rem 2.492rem 0rem;
   width:720.29px;
+}
+.hero-left h2 {
+  color: #00E1FF;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 25px;
+  margin: 2.492rem 0rem 0rem 10.3rem;
 }
 .hero-left p {
   font-size: 4rem;
@@ -80,6 +105,17 @@ html {
 @keyframes spaceHover {
   from {top:0px}
   to {top: 50px;}
+}
+.laser{
+  background-image: url(images/laser-default.svg);
+  height: 4rem;
+  width: 4rem;
+}
+.laser:{
+  background-image: url(images/laser-active.svg);
+    height: 25.7rem;
+  width: 25.7rem;
+  z-index: 1;
 }
 nav{
   align-items: center;
@@ -192,7 +228,7 @@ textarea::placeholder {
   transform: translate(-50%, -50%) scale(1);
 }
 .modal-body p {
-    color: #ffffff;
+  color: #ffffff;
   font-family: "Teko", sans-serif;
   font-size: 3rem;
   font-style: normal;
