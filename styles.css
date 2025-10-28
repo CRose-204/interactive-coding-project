@@ -43,18 +43,15 @@ html {
   width: 1440px;
 }
 /* Hero */
-.laser {
-  height: 34.8px;
-  width:34.8px;
+.game-title-active {
+  margin: 2.492rem 0rem 1.25rem 10.3rem;
+  position: absolute;
+  width: 73.4rem;
 }
-.game-title {
-  align-items: center;
-  display: flex;
-  margin: 4.984rem 0rem 1.25rem 9.9rem;
-}
-.game-title-text {
-  height:122.6px;
-  width:739.85px;
+.game-title-default {
+  margin: 2.492rem 0rem 1.25rem 10.3rem;
+  position:absolute;
+  width: 73.4rem;
 }
 .hero-container {
   display: flex;
@@ -64,7 +61,7 @@ html {
 }
 .hero-image {
   height: 405.16px;
-  margin-right: 0rem 0rem 0rem 0rem;
+  margin-right: 0rem 0rem 2.492rem 0rem;
   width:720.29px;
   z-index: -1;
 }
