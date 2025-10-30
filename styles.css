@@ -95,10 +95,7 @@ html {
   padding-right: 5.65rem;
 }
 .hover-girl {
-  animation-name:spaceHover;
-  animation-direction: alternate;
-  animation-duration: 1500ms;
-  animation-iteration-count: infinite;
+  animation:spaceHover 1.5s alternate infinite ease-in-out;
   height: 500px;
   position: relative;
   width:437.5px;
