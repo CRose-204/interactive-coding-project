@@ -47,6 +47,7 @@ html {
     align-items: center;
     display: flex;
     margin: 0rem 0rem 1.25rem 10.3rem;
+    overflow: hidden;
 }
 .cybershot li {
   background: linear-gradient(180deg,rgba(255, 255, 255, 1) 25%, rgba(168, 175, 177, 1) 38%, rgba(51, 58, 64, 1) 50%, rgba(168, 175, 177, 1) 63%, rgba(255, 255, 255, 1) 75%);
@@ -102,20 +103,44 @@ html {
   position: relative;
   width:437.5px;
 }
+@keyframes lightUp {
+  0%, 100%{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+}
 @keyframes spaceHover {
   from {top:0px}
   to {top: 50px;}
 }
-.laser{
-  background-image: url(images/laser-default.svg);
-  height: 4rem;
+.laser {
+  position: relative;
   width: 4rem;
+  height: 4rem;
 }
-.laser:{
-  background-image: url(images/laser-active.svg);
-    height: 25.7rem;
+.laser-active {
+  animation: lightUp 2s infinite ease-in-out;
+  height: 25.7rem;
+  left: 50%;
+  overflow: visible;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
   width: 25.7rem;
+  transform: translate(-50%, -50%);
   z-index: 1;
+}
+.laser-default{
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 nav{
   align-items: center;
