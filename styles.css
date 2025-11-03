@@ -51,15 +51,16 @@ html {
 }
 .cybershot li {
   background: linear-gradient(180deg,rgba(255, 255, 255, 1) 25%, rgba(168, 175, 177, 1) 38%, rgba(51, 58, 64, 1) 50%, rgba(168, 175, 177, 1) 63%, rgba(255, 255, 255, 1) 75%);
+  background-clip: text; 
   font-family: "Stalinist One", sans-serif;
   font-size: 8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 9rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
   -webkit-text-stroke: .4rem;
   -webkit-text-stroke-color: #333A40;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   z-index: -1;
 }
 .hero-container {
