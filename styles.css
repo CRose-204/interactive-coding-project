@@ -1,0 +1,316 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/*Reference
+.<div> {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.<div-2> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.<div-3> {
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+body {
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+html {
+  background-color: #000000;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+/* Hero */
+.cybershot{
+    align-items: center;
+    display: flex;
+    margin: 0rem 0rem 1.25rem 10.3rem;
+    overflow: hidden;
+}
+.cybershot li {
+  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 25%, rgba(168, 175, 177, 1) 38%, rgba(51, 58, 64, 1) 50%, rgba(168, 175, 177, 1) 63%, rgba(255, 255, 255, 1) 75%);
+  background-clip: text; 
+  font-family: "Stalinist One", sans-serif;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke: .4rem;
+  -webkit-text-stroke-color: #333A40;
+  z-index: -1;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  height: 76.2rem;
+  margin: 0rem 0rem 18.1rem 0rem;
+}
+.hero-image {
+  height: 405.16px;
+  margin-right: 0rem 0rem 2.492rem 0rem;
+  width:720.29px;
+}
+.hero-left h2 {
+  color: #00E1FF;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 25px;
+  margin: 2.492rem 0rem 0rem 10.3rem;
+}
+.hero-left p {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.8rem;
+  margin: 1.25rem 0rem 0rem 10.3rem;
+}
+.hero-right{
+  padding-top: 12.5rem;
+  padding-right: 5.65rem;
+}
+.hover-girl {
+  animation:spaceHover 1.5s alternate infinite ease-in-out; 
+  height: 500px;
+  position: relative;
+  width:437.5px;
+}
+@keyframes lightUp {
+  0%, 100%{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes spaceHover {
+  from {top:0px}
+  to {top: 50px;}
+}
+.laser {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+}
+.laser-active {
+  animation: lightUp 2s infinite ease-in-out;
+  height: 25.7rem;
+  left: 50%;
+  overflow: visible;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  width: 25.7rem;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.laser-default{
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+nav{
+  align-items: center;
+  background: linear-gradient(90deg, rgba(4, 0, 26, 1) 0%, rgba(0, 225, 255, 1) 100%);
+  display: flex;
+  height: 7.5rem;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-left: 10.3rem;
+  padding-right: 10.359rem;
+  width: 144rem;;
+}
+.nav-container{
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-left: 10.3rem;
+  margin-right: 10.359rem;
+  margin-top: 2rem;
+}
+.nav-list {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  width: 44.883rem;
+}
+.nav-list li{
+  color: #ffffff;
+}
+.profile{
+  height: 30px;
+  width:30px;
+}
+.shopping-cart{
+  height: 25px;
+  width:26.83px;
+}
+.ticket-button {
+   background: #2600FF;
+  background-clip: padding-box, border-box;
+  border-radius: 1rem;
+  border-style: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 2.4rem;
+  margin: 2.5rem 0rem 0rem 10.3rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.ticket-button:hover {
+  background: #00B1C8;
+}
+.tournament-series-logo {
+  height:3.6rem;
+  width: 49.2rem;
+}
+/* Modal */
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  outline: none;
+  z-index: 12;
+}
+.hover-girl-2 {
+  align-items: end;
+  height: 450px;
+  width:627px;
+  z-index: 11;
+}
+input[type="text"] {
+  background-color: rgba(255, 255, 255, .5);
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin: 2.5rem 0rem 1.25rem 0rem;
+  padding: 1.45rem 0rem 1.45rem 2.5rem;
+  width: 50rem;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+}
+.modal {
+  background: linear-gradient(90deg,rgba(4, 0, 26, 1) 0%, rgba(0, 225, 255, 1) 100%);
+  justify-content: center;
+  height:50rem;
+  left: 50%;
+  max-width: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  width: 144rem;
+  z-index: 10;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-body p {
+  color: #ffffff;
+  font-family: "Teko", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3.6rem;
+  margin: 1.25rem 0rem 2.5rem 0rem;
+}
+.modal-container {
+  display:flex;
+  height:45rem;
+  justify-content: space-between;
+  margin: 5rem 9.1rem 0rem 10.3rem;
+  width: 124.6rem;
+}
+.modal-left {
+  width:60.5rem;
+}
+.modal-right {
+  width:62.7rem;
+}
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height:6rem;
+  letter-spacing: -1.5%;
+  margin: 0rem 0rem 0rem 0rem;
+  text-shadow: .2rem .2rem 0rem #909090;
+}
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.ticket-button-2 {
+   background: #2600FF;
+  background-clip: padding-box, border-box;
+  border-radius: 1rem;
+  border-style: none;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 2.4rem;
+  margin: 1.25rem 0rem 0rem 0rem;
+  padding: 2rem 2rem 2rem 2rem;
+  z-index: 12;
+}.ticket-button-2:hover {
+  background: #00B1C8;
+}
